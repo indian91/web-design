@@ -1,0 +1,15 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center><h2>This is the signup page</h2></center>
+    
+    <form method="POST" action="/app1/aftersignup/">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Signup"><a href="/app1/login/" style="color: blue;padding: 3px;"><b>Already Register?</b></a>
+    </form>
+</body>
+    
+</html>

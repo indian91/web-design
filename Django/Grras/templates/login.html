@@ -1,0 +1,16 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    <center><h2>* This is Login page *</h2></center> 
+    {% if msg %}
+    <h3>{{msg}}</h3>
+    {% endif %}
+    </body>
+<form method='POST' action="/userinfo/afterlogin/">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Login"><a href="/userinfo/signup" style="color: blue;padding: 3px;">New User ?</a>
+</form>
+</html>

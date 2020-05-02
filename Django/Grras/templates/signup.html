@@ -1,0 +1,13 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    <center><h2>* This is signup page *</h2></center> 
+    </body>
+<form>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Signup"><a href="/userinfo/login" style="color: blue;padding: 3px;">Already Registered ?</a>
+</form>
+</html>

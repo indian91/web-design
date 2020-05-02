@@ -1,0 +1,22 @@
+body{
+    background-color: burlywood;
+}
+h3{
+    color: darkblue;
+    font-size: 30px;
+}
+a{
+    float: right;
+    color: cyan;
+    font-size: 40px;
+    padding: 2px;
+    margin-left: 25px;
+}
+div{
+    margin-left: 930px;
+    text-align: center;
+    height:100px;
+    width: 400px;
+    background-color: black;
+   
+}
