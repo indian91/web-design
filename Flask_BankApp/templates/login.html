@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        {% include "header.html" %}
+        {% block head %}
+        {% endblock %}
+        {% if msg %}
+        <h2 style="color:darkblue">{{msg}}</h2>
+        {% endif %}
+    <center>
+        <h1>This is Login page</h1>
+        <div>
+            <form method="POST" action="/login/login1">
+                Enter Account Number:<input type="text" name='acc' required>
+                Enter Password:<input type="password" name='pass' required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </center>
+    </body>
+
+</html>

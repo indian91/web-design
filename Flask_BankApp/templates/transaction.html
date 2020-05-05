@@ -1,0 +1,40 @@
+<html>
+    <head></head>
+<body>
+    <html>
+    <head>
+        <center>
+            ** Welcome to our Bank **
+        </center>
+        <link rel="stylesheet" type='text/css' href="{{ url_for('static',filename='abc.css')}}">
+        <title>
+            This is our title
+        </title>
+    </head>
+        {% if msg %}
+        <h2 style="color:darkblue">{{msg}}</h2>
+        {% endif %}
+    <body style="background:linear-gradient(to right, rgb(206, 66, 66),rgb(222,222,222))">
+        
+    <div>
+        <ul id="list">
+            <li><a href='/login/login1/password'>Update Password</a></li>
+            <li><a href='/login/login1/balance'>Check_bal</a></li>
+            <li><a href='/login/login1/credit'>Credit</a></li>
+            <li><a href='/login/login1/debit'>Debit</a></li>
+        </ul>
+    </div>
+    </body>
+</html>
+<style>
+    div{
+        background-color: black;
+        text-align: center;
+    }
+    ul {
+        display: inline-block;
+    }
+    ul li a{
+        color:burlywood;
+    }
+</style>

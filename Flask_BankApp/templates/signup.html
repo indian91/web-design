@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+    <body>
+        {% include "header.html" %}
+        {% block head %}
+        {% endblock %}
+        {% if msg %}
+        <h2 style="color: darkblue;">{{msg}}</h2>
+        {% endif %}
+<center>
+    <center>   <h1>This is Signup page</h1></center>
+ 
+<div class="form">
+<form method="POST" action="/signup/signup1" style="padding:2px;margin-top: 10%;">
+     FName:<input type="text" name="Fname" required><br>
+     LName: <input type="text" name='Lname'><br>
+     Paswd:  <input type="password" name='pass' required><br>
+     Email:     <input type="email" name='email' required><br><br>
+    <input type="submit" value="Signup">
+</form>
+</div>
+</center>
+    </body>
+<footer>    
+</footer>
+</html>
+<style>
+.form    {
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+}
+</style>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body style="background:linear-gradient(rgb(230, 252, 169),rgb(226, 161, 161));">
+        <center><h1>This is the debit transaction page</h1>
+        </center>
+    <div>
+        <form method="POST" action='/login/login1/debit/debit1'>
+            Enter Acc No.<br>
+            <input type="number" name='acc' required><br>
+            Enter password<br>
+            <input type="password" name='pass' required><br>
+            Withdrwal Amount<br>
+            <input type='number' name="bal" min=1000 required><br><br>
+            <input type="submit" style="margin-left: 7%;">
+        </form>
+    </div>
+    </body>
+
+</html>
+<style>
+    div{
+        margin-top: 15%;
+        height: 180px;
+        width:250px;
+        margin-left: 40%;
+        border: 2px solid black;    
+        text-align: center;
+</style>
